@@ -24,3 +24,11 @@ BenchmarkBytesTrimLeftSpace/reallybig-12         	201292  	      6414 ns/op
 BenchmarkStringsTrimLeftFuncSpace/reallybig-12   	374078  	      2976 ns/op
 BenchmarkStringsTrimLeftSpace/reallybig-12       	155467  	      7592 ns/op
 ```
+
+## Lookup Tables
+Tested on 11/30/2019 on `darwin`/`amd64` with `go1.13.1`:
+```
+BenchmarkStringLookupLengthSwitch-12    	  169048	      6039 ns/op	       0 B/op	       0 allocs/op
+BenchmarkStringLookupSwitch-12          	  158728	      7524 ns/op	       0 B/op	       0 allocs/op
+BenchmarkStringBenchmarkLookupMap-12    	  406892	      3011 ns/op	       0 B/op	       0 allocs/op
+```
